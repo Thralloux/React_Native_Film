@@ -4,7 +4,7 @@ import listeFilms from '../listeFilms.json'
 
 
 function Detail({route}) {
-    const id = route.params.id
+    const id = route.params.id -1
 
     console.log(route);
     
