@@ -11,7 +11,7 @@ function Detail({route}) {
     const styles =StyleSheet.create({
         vignetteSyle: {
             height: '100%',
-            backgroundColor: "black",
+            backgroundColor: "black"
             
         },
     });
@@ -25,21 +25,19 @@ function Detail({route}) {
             style={{
                 borderRadius: 10,
                 height : 400,
-                width: '100%',
-                
-                
+                width: '100%'    
             }}>
             </Image>
         </View>
         <View style={{...styles.vignetteSyle}}>
-        <View style={{alignItems:'center'}}>
+        <View>
             
-            <Text style={{paddingTop: 20,fontSize: 18,color: 'white'}}>Le film est réalisé par {listeFilms[id].Director} </Text>
-            <Text style={{fontSize: 18,color: 'white'}}>Il réalise {listeFilms[id].BoxOffice} au BoxOffice</Text>
-            <Text style={{fontSize: 18,color: 'white'}}>Il à obtenue une note de: {listeFilms[id].Ratings[0].Value}</Text>
-            <Text style={{fontSize: 18,color: 'white'}}>Le film dure: {listeFilms[id].Runtime}{"\n"}</Text>
+            <Text style={{paddingTop: 20,fontSize: 18,color: 'white',paddingLeft:'10%'}}>Le film est réalisé par {listeFilms[id].Director}{"\n"}
+            Il réalise {listeFilms[id].BoxOffice} au BoxOffice{"\n"}
+            Il à obtenue une note de: {listeFilms[id].Ratings[0].Value}{"\n"}
+            Le film dure: {listeFilms[id].Runtime}{"\n"}{"\n"}
         
-            <Text style={{fontSize: 18,color: 'white'}}>Résumer: {listeFilms[id].Plot}</Text>
+            Résumer: {listeFilms[id].Plot}</Text>
             
             
             
